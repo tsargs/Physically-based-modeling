@@ -1,0 +1,94 @@
+{
+  "cube_or_hexagon": -1,
+  "play_from_file": 1,
+  "write_to_file": 0,
+  "particle_count": 5000,
+  "particle_generator_count": 1,
+  "generator1":{
+      "type":"nozzle",
+      "position":[-20,80,30],
+      "velocity":[10, -3, 10],
+      "angular_range":60,
+      "rate": 300,
+      "mass": 10,
+      "surface_radius": 5,
+      "air_resistance": 1,
+      "life_span": 20,
+      "start_color": [0.2, 1.0, 0.2],
+      "end_color": [0.2, 0.2, 0.2]
+  },
+    "vortex_count": 1,
+    "vortex":{
+        "base_center":[0,0,0],
+        "axis":[0.5,0.5,0],
+        "length": 200,
+        "radius": 10,
+        "rotational_frequency": 100,
+        "max_rotational_frequency": 45,
+        "vortex_tightness": 2
+    },
+  "ball_count": 0,
+  "ball_trail": 0,
+  "wind_count": 0,
+  "wind_push_and_pull": 1,
+  "wind1":{
+      "source":[-100,-100,100],
+      "velocity":[150,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind2":{
+      "source":[-100,-100,-100],
+      "velocity":[150,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind3":{
+      "source":[-100,100,100],
+      "velocity":[80,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind4":{
+      "source":[-100,100,-100],
+      "velocity":[80,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind5":{
+      "source":[100,100,100],
+      "velocity":[-60,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind6":{
+      "source":[100,100,-100],
+      "velocity":[-60,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind7":{
+      "source":[100,-100,100],
+      "velocity":[-60,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind8":{
+      "source":[100,-100,-100],
+      "velocity":[-60,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind9":{
+      "source":[-150,0,0],
+      "velocity":[160,0,0],
+      "angle":50,
+      "distance":45
+  },
+  "wind10":{
+      "source":[150,0,0],
+      "velocity":[-300,0,0],
+      "angle":50,
+      "distance":45
+  }
+}

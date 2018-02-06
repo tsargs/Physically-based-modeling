@@ -1,0 +1,140 @@
+{
+  "gravity": [0, 0.5, 0],
+  "container": "hexagon",
+  "render_container": 0,
+  "obstacle_count": 0,
+  "play_from_file": 1,
+  "write_to_file": 1,
+  "particle_count": 0,
+  "boid_count": 0,
+  "springy_mesh_count": 0,
+  "h_denom": 90,
+  "integration":"rk4",
+  "rigid_body_count": 1,
+  "rigid_body1":{
+      "type": "cube",
+      "initial_position": [-80,75,-80],
+      "initial_rotation": [0,0,0],
+      "initial_velocity": [50,5,50],
+      "initial_angular_velocity": [2,1,0],
+      "radius": 10,
+      "mass": 10,
+      "drag_coefficient": 0.04,
+      "lift_coefficient": 0.03,
+      "color": [0.0,1.0,0.0],
+      "render_type": "wireframe"
+   },
+    "rigid_body2":{
+        "type": "cube",
+        "initial_position": [-80,75,80],
+        "initial_rotation": [0,0,0],
+        "initial_velocity": [50,5,-50],
+        "initial_angular_velocity": [0,2,0],
+        "radius": 10,
+        "mass": 10,
+        "drag_coefficient": 0.04,
+        "lift_coefficient": 0.03,
+        "color": [1.0,0.0,0.0],
+        "render_type": "wireframe"
+    },
+    "rigid_body3":{
+        "type": "cube",
+        "initial_position": [80,75,-80],
+        "initial_rotation": [0,0,0],
+        "initial_velocity": [-50,5,50],
+        "initial_angular_velocity": [1,2,0],
+        "radius": 10,
+        "mass": 10,
+        "drag_coefficient": 0.04,
+        "lift_coefficient": 0.03,
+        "color": [1.0,1.0,0.0],
+        "render_type": "wireframe"
+    },
+    "rigid_body4":{
+        "type": "cube",
+        "initial_position": [80,75,80],
+        "initial_rotation": [0,0,0],
+        "initial_velocity": [-50,5,-50],
+        "initial_angular_velocity": [1,1,0],
+        "radius": 10,
+        "mass": 10,
+        "drag_coefficient": 0.04,
+        "lift_coefficient": 0.03,
+        "color": [1.0,1.0,1.0],
+        "render_type": "wireframe"
+    },
+  "ball_count": 0,
+  "ball_trail": 0,
+    "vortex_count": 0,
+    "vortex":{
+        "base_center":[0,0,0],
+        "axis":[0,0.5,0.5],
+        "length": 200,
+        "radius": 10,
+        "rotational_frequency": 100,
+        "max_rotational_frequency": 120,
+        "vortex_tightness": 1.5
+    },
+  "wind_count": 0,
+  "wind_push_and_pull": 1,
+  "wind1":{
+      "source":[-100,-100,100],
+      "velocity":[150,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind2":{
+      "source":[-100,-100,-100],
+      "velocity":[150,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind3":{
+      "source":[-100,100,100],
+      "velocity":[80,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind4":{
+      "source":[-100,100,-100],
+      "velocity":[80,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind5":{
+      "source":[100,100,100],
+      "velocity":[-60,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind6":{
+      "source":[100,100,-100],
+      "velocity":[-60,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind7":{
+      "source":[100,-100,100],
+      "velocity":[-60,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind8":{
+      "source":[100,-100,-100],
+      "velocity":[-60,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind9":{
+      "source":[-150,0,0],
+      "velocity":[160,0,0],
+      "angle":50,
+      "distance":45
+  },
+  "wind10":{
+      "source":[150,0,0],
+      "velocity":[-300,0,0],
+      "angle":50,
+      "distance":45
+  }
+}

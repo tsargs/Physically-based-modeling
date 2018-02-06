@@ -1,0 +1,139 @@
+{
+  "gravity": [0.0, -10.0, 0],
+  "cube_or_hexagon": -1,
+  "render_container": 0,
+  "obstacle_count": 0,
+  "play_from_file": 0,
+  "write_to_file": 0,
+  "particle_count": 0,
+  "boid_count": 50,
+  "boid_generator_count": 2,
+  "boid_generator1":{
+      "type":"nozzle",
+      "position":[-20,80,30],
+      "velocity":[60,-3,60],
+      "angular_range":60,
+      "rate": 25,
+      "mass": 10,
+      "surface_radius": 20,
+      "air_resistance": 1,
+      "life_span": 5,
+      "start_color": [0.2, 1.0, 0.2],
+      "end_color": [0.0, 0.0, 1.0],
+      "particle_type": "streak",
+      "polygon_type": "NA"
+  },
+    "boid_generator2":{
+        "type":"nozzle",
+        "position":[70,80,20],
+        "velocity":[60,-50,60],
+        "angular_range":60,
+        "rate": 25,
+        "mass": 10,
+        "surface_radius": 10,
+        "air_resistance": 1,
+        "life_span": 5,
+        "start_color": [1.0, 0.1, 0.2],
+        "end_color": [1.0, 0.6, 0.1],
+        "particle_type": "streak",
+        "polygon_type": "NA"
+    },
+    "boid_constants":{
+        "ka": 700,
+        "kv": 1,
+        "kc": 600,
+        "distance_threshold_1": 100,
+        "distance_threshold_2": 150,
+        "angle_threshold_frontal_binocular": 90,
+        "angle_threshold_peripheral_monocular": 180,
+        "k_banking": 0.1,
+        "banking_smoothing_constant": 0.3
+    },
+    "lead_boid_behavior":{
+        "controller": "physics"
+    },
+  "ball_count": 0,
+  "ball_trail": 0,
+  "ball1":{
+      "position":[-80,-90,-80],
+      "velocity":[0,100,0],
+      "mass": 6,
+      "radius": 10,
+      "air_resistance": 1,
+      "ambient_color": [0.4, 0.0, 0.0],
+      "diffuse_color": [0.3, 0.0, 0.0],
+      "render": 0
+  },
+    "vortex_count": 1,
+    "vortex":{
+        "base_center":[0,0,0],
+        "axis":[0,0.5,0.5],
+        "length": 200,
+        "radius": 10,
+        "rotational_frequency": 100,
+        "max_rotational_frequency": 120,
+        "vortex_tightness": 1.5
+    },
+  "wind_count": 0,
+  "wind_push_and_pull": 1,
+  "wind1":{
+      "source":[-100,-100,100],
+      "velocity":[150,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind2":{
+      "source":[-100,-100,-100],
+      "velocity":[150,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind3":{
+      "source":[-100,100,100],
+      "velocity":[80,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind4":{
+      "source":[-100,100,-100],
+      "velocity":[80,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind5":{
+      "source":[100,100,100],
+      "velocity":[-60,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind6":{
+      "source":[100,100,-100],
+      "velocity":[-60,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind7":{
+      "source":[100,-100,100],
+      "velocity":[-60,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind8":{
+      "source":[100,-100,-100],
+      "velocity":[-60,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind9":{
+      "source":[-150,0,0],
+      "velocity":[160,0,0],
+      "angle":50,
+      "distance":45
+  },
+  "wind10":{
+      "source":[150,0,0],
+      "velocity":[-300,0,0],
+      "angle":50,
+      "distance":45
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "gravity": [0, -10, 0],
+  "container": "hexagon",
+  "render_container": 1,
+  "obstacle_count": 0,
+  "play_from_file": 0,
+  "write_to_file": 0,
+  "particle_count": 0,
+  "boid_count": 0,
+  "springy_mesh_count": 2,
+    "h_denom": 90,
+  "integration":"euler",
+  "springy_mesh1":{
+      "type": "cube",
+      "initial_position": [-4,4,0],
+      "initial_velocity": [0,12,0],
+      "radius": 10,
+      "mass": 2,
+      "time_constant": 5,
+      "period_of_oscillation": 5,
+      "drag_coefficient": 0.04,
+      "lift_coefficient": 0.03,
+      "color": [0.0,1.0,0.0],
+      "render_type": "wireframe",
+      "damping_factor": 0.05
+   },
+    "springy_mesh2":{
+        "type": "cube",
+        "initial_position": [0,60,5],
+        "initial_velocity": [0,0,0],
+        "radius": 10,
+        "mass": 5,
+        "time_constant": 5,
+        "period_of_oscillation": 5,
+        "drag_coefficient": 0.04,
+        "lift_coefficient": 0.03,
+        "color": [1.0,0.0,0.0],
+        "render_type": "wireframe",
+        "damping_factor": 0.05
+    },
+  "ball_count": 0,
+  "ball_trail": 0,
+    "vortex_count": 0,
+    "vortex":{
+        "base_center":[0,0,0],
+        "axis":[0,0.5,0.5],
+        "length": 200,
+        "radius": 10,
+        "rotational_frequency": 100,
+        "max_rotational_frequency": 120,
+        "vortex_tightness": 1.5
+    },
+  "wind_count": 0,
+  "wind_push_and_pull": 1,
+  "wind1":{
+      "source":[-100,-100,100],
+      "velocity":[150,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind2":{
+      "source":[-100,-100,-100],
+      "velocity":[150,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind3":{
+      "source":[-100,100,100],
+      "velocity":[80,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind4":{
+      "source":[-100,100,-100],
+      "velocity":[80,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind5":{
+      "source":[100,100,100],
+      "velocity":[-60,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind6":{
+      "source":[100,100,-100],
+      "velocity":[-60,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind7":{
+      "source":[100,-100,100],
+      "velocity":[-60,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind8":{
+      "source":[100,-100,-100],
+      "velocity":[-60,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind9":{
+      "source":[-150,0,0],
+      "velocity":[160,0,0],
+      "angle":50,
+      "distance":45
+  },
+  "wind10":{
+      "source":[150,0,0],
+      "velocity":[-300,0,0],
+      "angle":50,
+      "distance":45
+  }
+}

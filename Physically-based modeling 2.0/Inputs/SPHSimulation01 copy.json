@@ -1,0 +1,95 @@
+{
+  "container": "cube",
+  "render_container": 1,
+  "particle_count": 0,
+  "boid_count": 0,
+  "springy_mesh_count": 0,
+  "ball_count": 0,
+  "ball_trail": 0,
+  "rigid_body_count": 0,
+  "SPH_particle_count": 1000,
+  "SPH_particle_generator_count": 1,
+  "SPH_generator1":{
+      "type":"nozzle",
+      "position":[0,20,0],
+      "velocity":[0,-3,0],
+      "angular_range":85,
+      "rate": 100000,
+      "mass": 0.01,
+      "surface_radius": 30,
+      "air_resistance": 1,
+      "color": [0.0, 0.1, 1.0]
+  },
+  "vortex_count": 0,
+  "vortex":{
+      "base_center":[0,0,0],
+      "axis":[0.5,0.5,0],
+      "length": 200,
+      "radius": 10,
+      "rotational_frequency": 100,
+      "max_rotational_frequency": 45,
+      "vortex_tightness": 2
+  },
+  "wind_count": 0,
+  "wind_push_and_pull": 1,
+  "wind1":{
+      "source":[-100,-100,100],
+      "velocity":[150,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind2":{
+      "source":[-100,-100,-100],
+      "velocity":[150,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind3":{
+      "source":[-100,100,100],
+      "velocity":[80,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind4":{
+      "source":[-100,100,-100],
+      "velocity":[80,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind5":{
+      "source":[100,100,100],
+      "velocity":[-60,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind6":{
+      "source":[100,100,-100],
+      "velocity":[-60,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind7":{
+      "source":[100,-100,100],
+      "velocity":[-60,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind8":{
+      "source":[100,-100,-100],
+      "velocity":[-60,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind9":{
+      "source":[-150,0,0],
+      "velocity":[160,0,0],
+      "angle":50,
+      "distance":45
+  },
+  "wind10":{
+      "source":[150,0,0],
+      "velocity":[-300,0,0],
+      "angle":50,
+      "distance":45
+  }
+}

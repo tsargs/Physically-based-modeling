@@ -1,0 +1,16 @@
+{
+  "cube_or_hexagon": 1,
+  "ball_count":1,
+  "ball_trail":0,
+  "ball1":{
+      "position":[0,55,0],
+      "velocity":[300,0,0],
+      "mass": 6,
+      "radius": 10,
+      "air_resistance": 1,
+      "ambient_color": [0.4, 0.0, 0.0],
+      "diffuse_color": [0.3, 0.0, 0.0]
+  },
+  "wind_count": 0,
+  "wind_push_and_pull": 0
+}

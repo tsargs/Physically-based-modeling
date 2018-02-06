@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED11974F1FDE557B00A9B272 /* SPHNozzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED11974D1FDE557600A9B272 /* SPHNozzle.cpp */; };
+		ED15DB641FDDC69600EA3EDF /* SPHSimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED15DB601FDDC69500EA3EDF /* SPHSimulator.cpp */; };
+		ED15DB651FDDC69600EA3EDF /* SPHParticleGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED15DB611FDDC69500EA3EDF /* SPHParticleGenerator.cpp */; };
+		ED15DB681FDDCCA800EA3EDF /* SPHParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED15DB661FDDCCA600EA3EDF /* SPHParticle.cpp */; };
+		ED3FF1E31FB9548200C8EE6F /* Matrix3X3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3FF1E11FB9547B00C8EE6F /* Matrix3X3.cpp */; };
+		ED5BA6721FA9556D00A769F1 /* StateVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED5BA6701FA9556700A769F1 /* StateVector.cpp */; };
+		ED5BA6751FAAAC5500A769F1 /* TorsionalSpring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED5BA6731FAAAC4700A769F1 /* TorsionalSpring.cpp */; };
+		EDF32D421FB37FD40007F8F9 /* RigidBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDF32D3F1FB37FCF0007F8F9 /* RigidBody.cpp */; };
+		EDF32D431FB37FD40007F8F9 /* RigidBodySimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDF32D411FB37FD30007F8F9 /* RigidBodySimulator.cpp */; };
+		EDF32D461FB83D740007F8F9 /* StateVectorRB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDF32D441FB83D6C0007F8F9 /* StateVectorRB.cpp */; };
+		EDF32D491FB8DA160007F8F9 /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDF32D481FB8DA130007F8F9 /* Quaternion.cpp */; };
+		EDFB03891FA85C0C0018F076 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03881FA85C0C0018F076 /* main.cpp */; };
+		EDFB03BE1FA85C690018F076 /* Polygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03901FA85C5F0018F076 /* Polygon.cpp */; };
+		EDFB03BF1FA85C690018F076 /* Strut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03911FA85C5F0018F076 /* Strut.cpp */; };
+		EDFB03C01FA85C690018F076 /* Vortex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03931FA85C5F0018F076 /* Vortex.cpp */; };
+		EDFB03C11FA85C690018F076 /* SpringyMeshSimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03941FA85C5F0018F076 /* SpringyMeshSimulator.cpp */; };
+		EDFB03C21FA85C690018F076 /* Wind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03951FA85C5F0018F076 /* Wind.cpp */; };
+		EDFB03C31FA85C690018F076 /* BallSimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03971FA85C5F0018F076 /* BallSimulator.cpp */; };
+		EDFB03C41FA85C690018F076 /* ParticleGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03981FA85C5F0018F076 /* ParticleGenerator.cpp */; };
+		EDFB03C51FA85C690018F076 /* FlockSimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03991FA85C5F0018F076 /* FlockSimulator.cpp */; };
+		EDFB03C61FA85C690018F076 /* SphereObstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB039A1FA85C5F0018F076 /* SphereObstacle.cpp */; };
+		EDFB03C71FA85C690018F076 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB039C1FA85C600018F076 /* Vector2.cpp */; };
+		EDFB03C81FA85C690018F076 /* Obstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB039D1FA85C600018F076 /* Obstacle.cpp */; };
+		EDFB03C91FA85C690018F076 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB039E1FA85C600018F076 /* Matrix.cpp */; };
+		EDFB03CA1FA85C690018F076 /* Nozzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03A11FA85C600018F076 /* Nozzle.cpp */; };
+		EDFB03CB1FA85C690018F076 /* SpringyMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03A21FA85C600018F076 /* SpringyMesh.cpp */; };
+		EDFB03CC1FA85C690018F076 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03AA1FA85C620018F076 /* Particle.cpp */; };
+		EDFB03CD1FA85C690018F076 /* Matrix2X2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03AC1FA85C620018F076 /* Matrix2X2.cpp */; };
+		EDFB03CE1FA85C690018F076 /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03AF1FA85C650018F076 /* Vector3.cpp */; };
+		EDFB03CF1FA85C690018F076 /* Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03B31FA85C660018F076 /* Vertex.cpp */; };
+		EDFB03D01FA85C690018F076 /* ParticleSimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03B51FA85C670018F076 /* ParticleSimulator.cpp */; };
+		EDFB03D11FA85C690018F076 /* Matrix4X4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03B81FA85C680018F076 /* Matrix4X4.cpp */; };
+		EDFB03D21FA85C690018F076 /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03B91FA85C680018F076 /* Plane.cpp */; };
+		EDFB03D31FA85C690018F076 /* Face.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB03BD1FA85C690018F076 /* Face.cpp */; };
+		EDFB03D71FA85CA80018F076 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFB03D51FA85C920018F076 /* OpenGL.framework */; };
+		EDFB03D81FA85CAE0018F076 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFB03D61FA85C9B0018F076 /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDFB03831FA85C0C0018F076 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ED11974D1FDE557600A9B272 /* SPHNozzle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SPHNozzle.cpp; sourceTree = "<group>"; };
+		ED11974E1FDE557700A9B272 /* SPHNozzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHNozzle.h; sourceTree = "<group>"; };
+		ED15DB601FDDC69500EA3EDF /* SPHSimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SPHSimulator.cpp; sourceTree = "<group>"; };
+		ED15DB611FDDC69500EA3EDF /* SPHParticleGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SPHParticleGenerator.cpp; sourceTree = "<group>"; };
+		ED15DB621FDDC69600EA3EDF /* SPHParticleGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHParticleGenerator.h; sourceTree = "<group>"; };
+		ED15DB631FDDC69600EA3EDF /* SPHSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHSimulator.h; sourceTree = "<group>"; };
+		ED15DB661FDDCCA600EA3EDF /* SPHParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SPHParticle.cpp; sourceTree = "<group>"; };
+		ED15DB671FDDCCA700EA3EDF /* SPHParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHParticle.h; sourceTree = "<group>"; };
+		ED3FF1E11FB9547B00C8EE6F /* Matrix3X3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix3X3.cpp; sourceTree = "<group>"; };
+		ED3FF1E21FB9547D00C8EE6F /* Matrix3X3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3X3.h; sourceTree = "<group>"; };
+		ED5BA6701FA9556700A769F1 /* StateVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateVector.cpp; sourceTree = "<group>"; };
+		ED5BA6711FA9556A00A769F1 /* StateVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateVector.h; sourceTree = "<group>"; };
+		ED5BA6731FAAAC4700A769F1 /* TorsionalSpring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TorsionalSpring.cpp; sourceTree = "<group>"; };
+		ED5BA6741FAAAC4B00A769F1 /* TorsionalSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorsionalSpring.h; sourceTree = "<group>"; };
+		EDF32D3E1FB37FCD0007F8F9 /* RigidBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigidBody.h; sourceTree = "<group>"; };
+		EDF32D3F1FB37FCF0007F8F9 /* RigidBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RigidBody.cpp; sourceTree = "<group>"; };
+		EDF32D401FB37FD10007F8F9 /* RigidBodySimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigidBodySimulator.h; sourceTree = "<group>"; };
+		EDF32D411FB37FD30007F8F9 /* RigidBodySimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RigidBodySimulator.cpp; sourceTree = "<group>"; };
+		EDF32D441FB83D6C0007F8F9 /* StateVectorRB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateVectorRB.cpp; sourceTree = "<group>"; };
+		EDF32D451FB83D710007F8F9 /* StateVectorRB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateVectorRB.h; sourceTree = "<group>"; };
+		EDF32D471FB8DA0B0007F8F9 /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quaternion.h; sourceTree = "<group>"; };
+		EDF32D481FB8DA130007F8F9 /* Quaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Quaternion.cpp; sourceTree = "<group>"; };
+		EDFB03851FA85C0C0018F076 /* Physically-based modeling 2.0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Physically-based modeling 2.0"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFB03881FA85C0C0018F076 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EDFB038F1FA85C5E0018F076 /* ParticleGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleGenerator.h; sourceTree = "<group>"; };
+		EDFB03901FA85C5F0018F076 /* Polygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Polygon.cpp; sourceTree = "<group>"; };
+		EDFB03911FA85C5F0018F076 /* Strut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Strut.cpp; sourceTree = "<group>"; };
+		EDFB03921FA85C5F0018F076 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
+		EDFB03931FA85C5F0018F076 /* Vortex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vortex.cpp; sourceTree = "<group>"; };
+		EDFB03941FA85C5F0018F076 /* SpringyMeshSimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpringyMeshSimulator.cpp; sourceTree = "<group>"; };
+		EDFB03951FA85C5F0018F076 /* Wind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wind.cpp; sourceTree = "<group>"; };
+		EDFB03961FA85C5F0018F076 /* Matrix4X4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix4X4.h; sourceTree = "<group>"; };
+		EDFB03971FA85C5F0018F076 /* BallSimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BallSimulator.cpp; sourceTree = "<group>"; };
+		EDFB03981FA85C5F0018F076 /* ParticleGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleGenerator.cpp; sourceTree = "<group>"; };
+		EDFB03991FA85C5F0018F076 /* FlockSimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlockSimulator.cpp; sourceTree = "<group>"; };
+		EDFB039A1FA85C5F0018F076 /* SphereObstacle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SphereObstacle.cpp; sourceTree = "<group>"; };
+		EDFB039B1FA85C5F0018F076 /* SpringyMeshSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringyMeshSimulator.h; sourceTree = "<group>"; };
+		EDFB039C1FA85C600018F076 /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2.cpp; sourceTree = "<group>"; };
+		EDFB039D1FA85C600018F076 /* Obstacle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Obstacle.cpp; sourceTree = "<group>"; };
+		EDFB039E1FA85C600018F076 /* Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix.cpp; sourceTree = "<group>"; };
+		EDFB039F1FA85C600018F076 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		EDFB03A01FA85C600018F076 /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
+		EDFB03A11FA85C600018F076 /* Nozzle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nozzle.cpp; sourceTree = "<group>"; };
+		EDFB03A21FA85C600018F076 /* SpringyMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpringyMesh.cpp; sourceTree = "<group>"; };
+		EDFB03A31FA85C600018F076 /* Obstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obstacle.h; sourceTree = "<group>"; };
+		EDFB03A41FA85C610018F076 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		EDFB03A51FA85C610018F076 /* FlockSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlockSimulator.h; sourceTree = "<group>"; };
+		EDFB03A61FA85C610018F076 /* Wind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wind.h; sourceTree = "<group>"; };
+		EDFB03A71FA85C610018F076 /* Nozzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nozzle.h; sourceTree = "<group>"; };
+		EDFB03A81FA85C610018F076 /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
+		EDFB03A91FA85C610018F076 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		EDFB03AA1FA85C620018F076 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		EDFB03AB1FA85C620018F076 /* Strut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strut.h; sourceTree = "<group>"; };
+		EDFB03AC1FA85C620018F076 /* Matrix2X2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix2X2.cpp; sourceTree = "<group>"; };
+		EDFB03AD1FA85C620018F076 /* Outputs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Outputs; sourceTree = "<group>"; };
+		EDFB03AE1FA85C650018F076 /* SphereObstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SphereObstacle.h; sourceTree = "<group>"; };
+		EDFB03AF1FA85C650018F076 /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3.cpp; sourceTree = "<group>"; };
+		EDFB03B01FA85C660018F076 /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
+		EDFB03B11FA85C660018F076 /* Polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polygon.h; sourceTree = "<group>"; };
+		EDFB03B21FA85C660018F076 /* Face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face.h; sourceTree = "<group>"; };
+		EDFB03B31FA85C660018F076 /* Vertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vertex.cpp; sourceTree = "<group>"; };
+		EDFB03B41FA85C670018F076 /* Vortex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vortex.h; sourceTree = "<group>"; };
+		EDFB03B51FA85C670018F076 /* ParticleSimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleSimulator.cpp; sourceTree = "<group>"; };
+		EDFB03B61FA85C670018F076 /* ParticleSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleSimulator.h; sourceTree = "<group>"; };
+		EDFB03B71FA85C680018F076 /* Inputs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Inputs; sourceTree = "<group>"; };
+		EDFB03B81FA85C680018F076 /* Matrix4X4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix4X4.cpp; sourceTree = "<group>"; };
+		EDFB03B91FA85C680018F076 /* Plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plane.cpp; sourceTree = "<group>"; };
+		EDFB03BA1FA85C680018F076 /* SpringyMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringyMesh.h; sourceTree = "<group>"; };
+		EDFB03BB1FA85C690018F076 /* BallSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallSimulator.h; sourceTree = "<group>"; };
+		EDFB03BC1FA85C690018F076 /* Matrix2X2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix2X2.h; sourceTree = "<group>"; };
+		EDFB03BD1FA85C690018F076 /* Face.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Face.cpp; sourceTree = "<group>"; };
+		EDFB03D51FA85C920018F076 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EDFB03D61FA85C9B0018F076 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDFB03821FA85C0C0018F076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFB03D81FA85CAE0018F076 /* GLUT.framework in Frameworks */,
+				EDFB03D71FA85CA80018F076 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDFB037C1FA85C0C0018F076 = {
+			isa = PBXGroup;
+			children = (
+				EDFB03871FA85C0C0018F076 /* Physically-based modeling 2.0 */,
+				EDFB03861FA85C0C0018F076 /* Products */,
+				EDFB03D41FA85C920018F076 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDFB03861FA85C0C0018F076 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDFB03851FA85C0C0018F076 /* Physically-based modeling 2.0 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDFB03871FA85C0C0018F076 /* Physically-based modeling 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				EDFB03971FA85C5F0018F076 /* BallSimulator.cpp */,
+				EDFB03BB1FA85C690018F076 /* BallSimulator.h */,
+				EDFB03BD1FA85C690018F076 /* Face.cpp */,
+				EDFB03B21FA85C660018F076 /* Face.h */,
+				EDFB03991FA85C5F0018F076 /* FlockSimulator.cpp */,
+				EDFB03A51FA85C610018F076 /* FlockSimulator.h */,
+				EDFB03B71FA85C680018F076 /* Inputs */,
+				EDFB03A01FA85C600018F076 /* json.hpp */,
+				EDFB03881FA85C0C0018F076 /* main.cpp */,
+				EDFB039E1FA85C600018F076 /* Matrix.cpp */,
+				EDFB03A41FA85C610018F076 /* Matrix.h */,
+				EDFB03AC1FA85C620018F076 /* Matrix2X2.cpp */,
+				EDFB03BC1FA85C690018F076 /* Matrix2X2.h */,
+				ED3FF1E11FB9547B00C8EE6F /* Matrix3X3.cpp */,
+				ED3FF1E21FB9547D00C8EE6F /* Matrix3X3.h */,
+				EDFB03B81FA85C680018F076 /* Matrix4X4.cpp */,
+				EDFB03961FA85C5F0018F076 /* Matrix4X4.h */,
+				EDFB03A11FA85C600018F076 /* Nozzle.cpp */,
+				EDFB03A71FA85C610018F076 /* Nozzle.h */,
+				EDFB039D1FA85C600018F076 /* Obstacle.cpp */,
+				EDFB03A31FA85C600018F076 /* Obstacle.h */,
+				EDFB03AD1FA85C620018F076 /* Outputs */,
+				EDFB03AA1FA85C620018F076 /* Particle.cpp */,
+				EDFB03A91FA85C610018F076 /* Particle.h */,
+				EDFB03981FA85C5F0018F076 /* ParticleGenerator.cpp */,
+				EDFB038F1FA85C5E0018F076 /* ParticleGenerator.h */,
+				EDFB03B51FA85C670018F076 /* ParticleSimulator.cpp */,
+				EDFB03B61FA85C670018F076 /* ParticleSimulator.h */,
+				EDFB03B91FA85C680018F076 /* Plane.cpp */,
+				EDFB03B01FA85C660018F076 /* Plane.h */,
+				EDFB03901FA85C5F0018F076 /* Polygon.cpp */,
+				EDFB03B11FA85C660018F076 /* Polygon.h */,
+				EDF32D481FB8DA130007F8F9 /* Quaternion.cpp */,
+				EDF32D471FB8DA0B0007F8F9 /* Quaternion.h */,
+				EDF32D3F1FB37FCF0007F8F9 /* RigidBody.cpp */,
+				EDF32D3E1FB37FCD0007F8F9 /* RigidBody.h */,
+				EDF32D411FB37FD30007F8F9 /* RigidBodySimulator.cpp */,
+				EDF32D401FB37FD10007F8F9 /* RigidBodySimulator.h */,
+				EDFB039A1FA85C5F0018F076 /* SphereObstacle.cpp */,
+				EDFB03AE1FA85C650018F076 /* SphereObstacle.h */,
+				ED11974D1FDE557600A9B272 /* SPHNozzle.cpp */,
+				ED11974E1FDE557700A9B272 /* SPHNozzle.h */,
+				ED15DB661FDDCCA600EA3EDF /* SPHParticle.cpp */,
+				ED15DB671FDDCCA700EA3EDF /* SPHParticle.h */,
+				ED15DB611FDDC69500EA3EDF /* SPHParticleGenerator.cpp */,
+				ED15DB621FDDC69600EA3EDF /* SPHParticleGenerator.h */,
+				ED15DB601FDDC69500EA3EDF /* SPHSimulator.cpp */,
+				ED15DB631FDDC69600EA3EDF /* SPHSimulator.h */,
+				EDFB03A21FA85C600018F076 /* SpringyMesh.cpp */,
+				EDFB03BA1FA85C680018F076 /* SpringyMesh.h */,
+				EDFB03941FA85C5F0018F076 /* SpringyMeshSimulator.cpp */,
+				EDFB039B1FA85C5F0018F076 /* SpringyMeshSimulator.h */,
+				ED5BA6701FA9556700A769F1 /* StateVector.cpp */,
+				ED5BA6711FA9556A00A769F1 /* StateVector.h */,
+				EDF32D441FB83D6C0007F8F9 /* StateVectorRB.cpp */,
+				EDF32D451FB83D710007F8F9 /* StateVectorRB.h */,
+				EDFB03911FA85C5F0018F076 /* Strut.cpp */,
+				EDFB03AB1FA85C620018F076 /* Strut.h */,
+				ED5BA6731FAAAC4700A769F1 /* TorsionalSpring.cpp */,
+				ED5BA6741FAAAC4B00A769F1 /* TorsionalSpring.h */,
+				EDFB039C1FA85C600018F076 /* Vector2.cpp */,
+				EDFB03A81FA85C610018F076 /* Vector2.h */,
+				EDFB03AF1FA85C650018F076 /* Vector3.cpp */,
+				EDFB03921FA85C5F0018F076 /* Vector3.h */,
+				EDFB03B31FA85C660018F076 /* Vertex.cpp */,
+				EDFB039F1FA85C600018F076 /* Vertex.h */,
+				EDFB03931FA85C5F0018F076 /* Vortex.cpp */,
+				EDFB03B41FA85C670018F076 /* Vortex.h */,
+				EDFB03951FA85C5F0018F076 /* Wind.cpp */,
+				EDFB03A61FA85C610018F076 /* Wind.h */,
+			);
+			path = "Physically-based modeling 2.0";
+			sourceTree = "<group>";
+		};
+		EDFB03D41FA85C920018F076 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDFB03D61FA85C9B0018F076 /* GLUT.framework */,
+				EDFB03D51FA85C920018F076 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDFB03841FA85C0C0018F076 /* Physically-based modeling 2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDFB038C1FA85C0C0018F076 /* Build configuration list for PBXNativeTarget "Physically-based modeling 2.0" */;
+			buildPhases = (
+				EDFB03811FA85C0C0018F076 /* Sources */,
+				EDFB03821FA85C0C0018F076 /* Frameworks */,
+				EDFB03831FA85C0C0018F076 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Physically-based modeling 2.0";
+			productName = "Physically-based modeling 2.0";
+			productReference = EDFB03851FA85C0C0018F076 /* Physically-based modeling 2.0 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDFB037D1FA85C0C0018F076 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Shyam Prathish Sargunam";
+				TargetAttributes = {
+					EDFB03841FA85C0C0018F076 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EDFB03801FA85C0C0018F076 /* Build configuration list for PBXProject "Physically-based modeling 2.0" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EDFB037C1FA85C0C0018F076;
+			productRefGroup = EDFB03861FA85C0C0018F076 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDFB03841FA85C0C0018F076 /* Physically-based modeling 2.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDFB03811FA85C0C0018F076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFB03D31FA85C690018F076 /* Face.cpp in Sources */,
+				EDFB03BE1FA85C690018F076 /* Polygon.cpp in Sources */,
+				EDFB03CC1FA85C690018F076 /* Particle.cpp in Sources */,
+				EDFB03C41FA85C690018F076 /* ParticleGenerator.cpp in Sources */,
+				ED5BA6721FA9556D00A769F1 /* StateVector.cpp in Sources */,
+				EDFB03C81FA85C690018F076 /* Obstacle.cpp in Sources */,
+				EDF32D461FB83D740007F8F9 /* StateVectorRB.cpp in Sources */,
+				ED11974F1FDE557B00A9B272 /* SPHNozzle.cpp in Sources */,
+				EDFB03D21FA85C690018F076 /* Plane.cpp in Sources */,
+				EDF32D491FB8DA160007F8F9 /* Quaternion.cpp in Sources */,
+				ED15DB641FDDC69600EA3EDF /* SPHSimulator.cpp in Sources */,
+				EDFB03CE1FA85C690018F076 /* Vector3.cpp in Sources */,
+				EDFB03C71FA85C690018F076 /* Vector2.cpp in Sources */,
+				ED5BA6751FAAAC5500A769F1 /* TorsionalSpring.cpp in Sources */,
+				EDFB03CB1FA85C690018F076 /* SpringyMesh.cpp in Sources */,
+				EDFB03C51FA85C690018F076 /* FlockSimulator.cpp in Sources */,
+				ED15DB651FDDC69600EA3EDF /* SPHParticleGenerator.cpp in Sources */,
+				EDFB03C61FA85C690018F076 /* SphereObstacle.cpp in Sources */,
+				EDFB03C31FA85C690018F076 /* BallSimulator.cpp in Sources */,
+				EDFB03891FA85C0C0018F076 /* main.cpp in Sources */,
+				ED3FF1E31FB9548200C8EE6F /* Matrix3X3.cpp in Sources */,
+				EDF32D421FB37FD40007F8F9 /* RigidBody.cpp in Sources */,
+				EDFB03D11FA85C690018F076 /* Matrix4X4.cpp in Sources */,
+				EDFB03BF1FA85C690018F076 /* Strut.cpp in Sources */,
+				EDFB03CD1FA85C690018F076 /* Matrix2X2.cpp in Sources */,
+				EDFB03C21FA85C690018F076 /* Wind.cpp in Sources */,
+				EDFB03D01FA85C690018F076 /* ParticleSimulator.cpp in Sources */,
+				EDFB03C01FA85C690018F076 /* Vortex.cpp in Sources */,
+				EDFB03CA1FA85C690018F076 /* Nozzle.cpp in Sources */,
+				EDFB03C91FA85C690018F076 /* Matrix.cpp in Sources */,
+				EDFB03C11FA85C690018F076 /* SpringyMeshSimulator.cpp in Sources */,
+				ED15DB681FDDCCA800EA3EDF /* SPHParticle.cpp in Sources */,
+				EDF32D431FB37FD40007F8F9 /* RigidBodySimulator.cpp in Sources */,
+				EDFB03CF1FA85C690018F076 /* Vertex.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EDFB038A1FA85C0C0018F076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EDFB038B1FA85C0C0018F076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EDFB038D1FA85C0C0018F076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDFB038E1FA85C0C0018F076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDFB03801FA85C0C0018F076 /* Build configuration list for PBXProject "Physically-based modeling 2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFB038A1FA85C0C0018F076 /* Debug */,
+				EDFB038B1FA85C0C0018F076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDFB038C1FA85C0C0018F076 /* Build configuration list for PBXNativeTarget "Physically-based modeling 2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFB038D1FA85C0C0018F076 /* Debug */,
+				EDFB038E1FA85C0C0018F076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDFB037D1FA85C0C0018F076 /* Project object */;
+}

@@ -1,0 +1,85 @@
+{
+  "cube_or_hexagon": 1,
+  "ball_count": 2,
+  "ball_trail":1,
+  "ball1":{
+      "position":[-80,-90,-80],
+      "velocity":[0,100,0],
+      "mass": 6,
+      "radius": 10,
+      "air_resistance": 1,
+      "ambient_color": [0.4, 0.0, 0.0],
+      "diffuse_color": [0.3, 0.0, 0.0]
+  },
+  "ball2":{
+      "position":[-60,-40,0],
+      "velocity":[0,-50,0],
+      "mass": 6,
+      "radius": 10,
+      "air_resistance": 1,
+      "ambient_color": [0.0, 0.0, 0.4],
+      "diffuse_color": [0.0, 0.0, 0.3]
+  },
+  "wind_count": 10,
+  "wind_push_and_pull": 1,
+  "wind1":{
+      "source":[-100,-100,100],
+      "velocity":[150,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind2":{
+      "source":[-100,-100,-100],
+      "velocity":[150,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind3":{
+      "source":[-100,100,100],
+      "velocity":[80,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind4":{
+      "source":[-100,100,-100],
+      "velocity":[80,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind5":{
+      "source":[100,100,100],
+      "velocity":[-60,-60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind6":{
+      "source":[100,100,-100],
+      "velocity":[-60,-60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind7":{
+      "source":[100,-100,100],
+      "velocity":[-60,60,-60],
+      "angle":30,
+      "distance":45
+  },
+  "wind8":{
+      "source":[100,-100,-100],
+      "velocity":[-60,60,60],
+      "angle":30,
+      "distance":45
+  },
+  "wind9":{
+      "source":[-150,0,0],
+      "velocity":[160,0,0],
+      "angle":50,
+      "distance":45
+  },
+  "wind10":{
+      "source":[150,0,0],
+      "velocity":[-300,0,0],
+      "angle":50,
+      "distance":45
+  }
+}
